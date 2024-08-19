@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layouts</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            height: 45px;
+
+            background-color: pink;
+
+        }
+
+        main {
+            padding: 20px 0px;
+            background-color: green;
+            margin: 20px 25px 20px 35px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: rgb(189, 143, 59);
+            width: 35vw;
+            height: 55vh;
+            align-content: center;
+            margin: 10px;
+        }
+
+        .box2 {
+            background-color: rgb(36, 128, 204);
+            width: 35vw;
+            height: 55vh;
+            align-content: center;
+            margin: 10px;
+        }
+
+        .text {
+            height: 100px;
+            color: wheat;
+            
+        }
+
+        p {
+            font-size: larger;
+            width: 35vw;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin: 50px 10px;
+            padding: 10px 50px;
+        }
+
+        .circle {
+            height: 32px;
+            width: 32px;
+            position: fixed;
+            background-color: orange;
+            bottom: 5px;
+            right: 10px;
+            border: 2px solid orange;
+            border-radius: 64px;
+        }
+
+        footer {
+            height: 20vh;
+            width: 100%;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </main>
+        <div class="text">
+            <p>Welcome to this Sigma Web Development Express</p>
+        </div>
+    <div class="circle">
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
