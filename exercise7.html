@@ -48,7 +48,7 @@
             align-items: center;
         }
 
-        main h1 {
+        main .heading h1 {
             text-align: center;
             font-family: Segoe UI 500;
             font-size: 48px;
@@ -57,14 +57,37 @@
             /* margin: 40px; */
         }
 
-        main h3 {
+        main .heading h3 {
             text-align: center;
             font-family: Segoe UI 500;
             font-size: 24px;
             font-weight: 500;
         }
 
-        main .d_sec {
+        main .heading .d_mac {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        main .heading .d_mac button {
+            border: 1px solid aqua;
+            border-radius: 5px;
+            font-size: large;
+            background-color: aqua;
+            color: white;
+            padding: 15px 10px;
+            cursor: pointer;
+        }
+
+
+        main .heading .d_mac button:hover {
+            background-color: rgb(0, 162, 255);
+            border: 1px solid rgb(0, 162, 255);
+            border-radius: 5px;
+        }
+
+        main .d_sec_head {
             display: flex;
             justify-content: left;
             padding-left: 200px;
@@ -72,15 +95,59 @@
             margin: 20px;
         }
 
-        main .d_sec img {
+        main .d_sec_head img {
             width: 60px;
             height: 60px;
         }
 
-        main .d_sec h3,img,small {
+        main .d_sec_head h3,
+        img,
+        small {
             padding-left: 7px;
         }
 
+        main .d_buttons {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-content: center;
+            justify-content: space-evenly;
+            /* width: 600px; */
+            height: 70vh;
+            margin: 0px 200px;
+
+        }
+
+        main .d_buttons .d_lang {
+            background-color: rgb(241, 240, 238);
+            border: 1px solid rgb(241, 240, 238);
+            border-radius: 20px;
+            width: 250px;
+            padding: 15px;
+        }
+
+        main .d_buttons .d_lang h4 {
+            padding-left: 7px;
+            font-weight: 500;
+        }
+
+        main .d_buttons .d_lang .buttons {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid rgb(0, 219, 0);
+            background-color: rgb(0, 219, 0);
+            border-radius: 7px;
+            margin: 2px;
+            padding: 5px;
+
+        }
+
+        main .d_buttons .d_lang .buttons:hover {
+            background-color: rgb(77, 224, 77);
+            cursor: pointer;
+        }
 
         footer .f_info .l_logo img {
             width: 235px;
@@ -153,23 +220,75 @@
     </header>
 
     <main>
-        <h1>
-            Download <strong>UltraEdit</strong> for Windows <img decoding="async"
-                src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112" height="32"
-                alt="Reviews" class="wp-image-1613 alignnone size-full">
-        </h1>
-        <h3>
-            Download and try UltraEdit before you buy it! This download includes the full Windows <br> version of the
-            text editor.
-        </h3>
+        <div class="heading">
+            <h1>
+                Download <strong>UltraEdit</strong> for Windows <img decoding="async"
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112" height="32"
+                    alt="Reviews" class="wp-image-1613 alignnone size-full">
+            </h1>
+            <h3>
+                Download and try UltraEdit before you buy it! This download includes the full Windows <br> version of
+                the
+                text editor.
+            </h3>
+            <div class="d_mac">
+                <button>DOWNLOAD MAC OR LINUX VERSION</button>
+            </div>
+        </div>
 
-        <div class="d_sec">
+        <div class="d_sec_head">
             <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt="UltraEdit"
                 srcset="">
             <h3>Download UltraEdit&nbsp;</h3>
             <small>
                 v2024.0(released 2024-04-19)
             </small>
+        </div>
+
+        <div class="d_buttons">
+            <div class="d_lang">
+                <h3>English</h3>
+                <h4>&nbsp;</h4>
+                <div class="buttons">
+                    Download 64-bit
+                </div>
+            </div>
+            <div class="d_lang">
+                <h3>Deutsh</h3>
+                <h4>German</h4>
+                <div class="buttons">
+                    Download 64-bit
+                </div>
+            </div>
+            <div class="d_lang">
+                <h3>Italiano</h3>
+                <h4>Itlalian</h4>
+                <div class="buttons">
+                    Download 64-bit
+                </div>
+            </div>
+            <div class="d_lang">
+                <h3>Español</h3>
+                <h4>Spanish</h4>
+                <div class="buttons">
+                    Download 64-bit
+                </div>
+            </div>
+            <div class="d_lang">
+                <h3>français</h3>
+                <h4>French</h4>
+                <div class="buttons">
+                    Download 64-bit
+                </div>
+            </div>
+            <div class="d_lang">
+                <h3>Português brasileiro</h3>
+                <h4>Brazilian Portuguese</h4>
+                <div class="buttons">
+                    Download 64-bit
+                </div>
+            </div>
+
         </div>
     </main>
 
