@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UltraEdit</title>
-    <style>
-        body {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UltraEdit</title>
+        <style>
+            body {
             padding: 0;
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         header {
@@ -46,6 +51,11 @@
         nav .items ul li {
             display: flex;
             align-items: center;
+        }
+
+        nav .items ul li:hover{
+            color: gray;
+            cursor: pointer;
         }
 
         main .heading h1 {
@@ -125,6 +135,7 @@
             border-radius: 20px;
             width: 250px;
             padding: 15px;
+            text-align: center; /* Center-align the text and buttons */
         }
 
         main .d_buttons .d_lang h4 {
@@ -139,14 +150,109 @@
             border: 1px solid rgb(0, 219, 0);
             background-color: rgb(0, 219, 0);
             border-radius: 7px;
-            margin: 2px;
+            margin: 2px auto; /* Center the buttons */
             padding: 5px;
-
+            width: 120px;
+            display: block; /* Ensures the buttons take up their own lines */
         }
 
         main .d_buttons .d_lang .buttons:hover {
             background-color: rgb(77, 224, 77);
             cursor: pointer;
+        }
+
+        article {
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+
+        article .midsec {
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+            padding: 25px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        article .midsec .join h3{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 31px;
+            margin-left: 50px
+        }
+
+        article .midsec .join p{
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 50px
+        }
+
+        article .midsec .sub{
+            right:10px;
+            width: 300px;
+            line-height: 2;
+            margin: 25px;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 7px;
+            color: black;
+            text-align: center;
+        }
+
+        article .midsec .sub h3{
+            color: rgb(0, 195, 255);
+            font-size:x-large;
+            font-weight: 500;
+        }
+
+        article .midsec .sub input{
+            border: 1px solid rgb(206, 199, 199);
+            padding: 7px 25px;
+            margin-bottom: 5px;
+        }
+
+        article .midsec .sub button{
+            border: 1px solid aqua;
+            border-radius: 10px;
+            font-size: large;
+            background-color: aqua;
+            color: white;
+            width: 150px;
+            padding: 10px 20px;
+            cursor: pointer;
+            /* margin-top: 3px; */
+            margin: 5px auto;
+            display: block;
+        }
+
+        article .midsec .sub button:hover{
+            background-color: rgb(0, 162, 255);
+            border: 1px solid rgb(0, 162, 255);
+            border-radius: 10px;
+        }
+
+        article .package{
+            padding: 25px;
+            margin: 20px;
+            margin-left: 100px;
+        }
+
+        article .package h3{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 31px;
+        }
+
+        article .package p{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
         }
 
         footer .f_info .l_logo img {
@@ -168,7 +274,8 @@
             width: 40px;
             margin: 5px;
         }
-    </style>
+        </style>
+    </head>
 </head>
 
 <body>
@@ -292,7 +399,36 @@
         </div>
     </main>
 
+    
+    <article>
+    <div class="midsec">
+        <div class="join">
+            <h3>Join the UltraEdit newsletter</h3> 
+            <p>Sign up for our newsletter and receive emails for the latest <br> news, blogs, and special deals on UltraEdit.</p>
+        </div>
+        <div class="sub">
+            <h3>Subscribe to our emails</h3>
+            <label for="Email">Enter email address</label><br>
+            <input type="text" id="email" name="email">
+            <br>
+            <button>Sign Up</button>
+        </div>
+    </div>
+        <div class="package">
+            <h3>EXE or MSI?</h3>
+            <p>
+                The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and later.
+            </p>
+            <p>
+                We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get the UltraEdit MSI installer.
+            </p>
+            <h3>Free trial period</h3>
+            <p>
+                This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must purchase a license to continue using it.
+            </p>
+        </div>
 
+    </article>
 
     <footer>
         <table>
