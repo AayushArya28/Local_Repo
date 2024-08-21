@@ -5,275 +5,358 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UltraEdit</title>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UltraEdit</title>
         <style>
             body {
-            padding: 0;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
 
-        header {
-            width: 100%;
-            position: sticky;
-            top: 0;
-        }
+            header {
+                width: 100%;
+                position: sticky;
+                top: 0;
+            }
 
-        nav {
-            background: white;
-            font-family: "Segoe UI";
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+            nav {
+                background: white;
+                font-family: "Segoe UI";
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
 
-        nav .logo img {
-            height: 55px;
-            padding: 10px;
-        }
+            nav .logo img {
+                height: 55px;
+                padding: 10px;
+            }
 
-        nav .items ul {
-            color: rgb(71, 71, 71);
-            font-size: 16px;
-            display: flex;
-            justify-content: flex-end;
-            list-style: none;
-            gap: 34px;
-        }
+            nav .items ul {
+                color: rgb(71, 71, 71);
+                font-size: 16px;
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                gap: 34px;
+            }
 
-        nav .items ul li span {
-            padding: 0 5px;
-        }
+            nav .items ul li span {
+                padding: 0 5px;
+            }
 
-        nav .items ul li {
-            display: flex;
-            align-items: center;
-        }
+            nav .items ul li {
+                display: flex;
+                align-items: center;
+            }
 
-        nav .items ul li:hover{
-            color: gray;
-            cursor: pointer;
-        }
+            nav .items ul li:hover {
+                color: gray;
+                cursor: pointer;
+            }
 
-        main .heading h1 {
-            text-align: center;
-            font-family: Segoe UI 500;
-            font-size: 48px;
-            font-weight: 500;
-            padding: 50px 50px 25px 50px;
-            /* margin: 40px; */
-        }
+            main .heading h1 {
+                text-align: center;
+                font-family: Segoe UI 500;
+                font-size: 48px;
+                font-weight: 500;
+                padding: 50px 50px 25px 50px;
+                /* margin: 40px; */
+            }
 
-        main .heading h3 {
-            text-align: center;
-            font-family: Segoe UI 500;
-            font-size: 24px;
-            font-weight: 500;
-        }
+            main .heading h3 {
+                text-align: center;
+                font-family: Segoe UI 500;
+                font-size: 24px;
+                font-weight: 500;
+            }
 
-        main .heading .d_mac {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
+            main .heading .d_mac {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
 
-        main .heading .d_mac button {
-            border: 1px solid aqua;
-            border-radius: 5px;
-            font-size: large;
-            background-color: aqua;
-            color: white;
-            padding: 15px 10px;
-            cursor: pointer;
-        }
+            main .heading .d_mac button {
+                border: 1px solid aqua;
+                border-radius: 5px;
+                font-size: large;
+                background-color: aqua;
+                color: white;
+                padding: 15px 10px;
+                cursor: pointer;
+            }
 
 
-        main .heading .d_mac button:hover {
-            background-color: rgb(0, 162, 255);
-            border: 1px solid rgb(0, 162, 255);
-            border-radius: 5px;
-        }
+            main .heading .d_mac button:hover {
+                background-color: rgb(0, 162, 255);
+                border: 1px solid rgb(0, 162, 255);
+                border-radius: 5px;
+            }
 
-        main .d_sec_head {
-            display: flex;
-            justify-content: left;
-            padding-left: 200px;
-            align-items: center;
-            margin: 20px;
-        }
+            main .d_sec_head {
+                display: flex;
+                justify-content: left;
+                padding-left: 200px;
+                align-items: center;
+                margin: 20px;
+            }
 
-        main .d_sec_head img {
-            width: 60px;
-            height: 60px;
-        }
+            main .d_sec_head img {
+                width: 60px;
+                height: 60px;
+            }
 
-        main .d_sec_head h3,
-        img,
-        small {
-            padding-left: 7px;
-        }
+            main .d_sec_head h3,
+            img,
+            small {
+                padding-left: 7px;
+            }
 
-        main .d_buttons {
-            display: flex;
-            text-align: center;
-            flex-wrap: wrap;
-            gap: 50px;
-            align-content: center;
-            justify-content: space-evenly;
-            /* width: 600px; */
-            height: 70vh;
-            margin: 0px 200px;
+            main .d_buttons {
+                display: flex;
+                text-align: center;
+                flex-wrap: wrap;
+                gap: 50px;
+                align-content: center;
+                justify-content: space-evenly;
+                /* width: 600px; */
+                height: 70vh;
+                margin: 0px 200px;
 
-        }
+            }
 
-        main .d_buttons .d_lang {
-            background-color: rgb(241, 240, 238);
-            border: 1px solid rgb(241, 240, 238);
-            border-radius: 20px;
-            width: 250px;
-            padding: 15px;
-            text-align: center; /* Center-align the text and buttons */
-        }
+            main .d_buttons .d_lang {
+                background-color: rgb(241, 240, 238);
+                border: 1px solid rgb(241, 240, 238);
+                border-radius: 20px;
+                width: 250px;
+                padding: 15px;
+                text-align: center;
+                /* Center-align the text and buttons */
+            }
 
-        main .d_buttons .d_lang h4 {
-            padding-left: 7px;
-            font-weight: 500;
-        }
+            main .d_buttons .d_lang h4 {
+                padding-left: 7px;
+                font-weight: 500;
+            }
 
-        main .d_buttons .d_lang .buttons {
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
-            border: 1px solid rgb(0, 219, 0);
-            background-color: rgb(0, 219, 0);
-            border-radius: 7px;
-            margin: 2px auto; /* Center the buttons */
-            padding: 5px;
-            width: 120px;
-            display: block; /* Ensures the buttons take up their own lines */
-        }
+            main .d_buttons .d_lang .buttons {
+                color: white;
+                font-size: 12px;
+                font-weight: 600;
+                border: 1px solid rgb(0, 219, 0);
+                background-color: rgb(0, 219, 0);
+                border-radius: 7px;
+                margin: 2px auto;
+                /* Center the buttons */
+                padding: 5px;
+                width: 120px;
+                display: block;
+                /* Ensures the buttons take up their own lines */
+            }
 
-        main .d_buttons .d_lang .buttons:hover {
-            background-color: rgb(77, 224, 77);
-            cursor: pointer;
-        }
+            main .d_buttons .d_lang .buttons:hover {
+                background-color: rgb(77, 224, 77);
+                cursor: pointer;
+            }
 
-        article {
-            background-color: rgb(46, 46, 46);
-            color: white;
-        }
+            article {
+                background-color: rgb(46, 46, 46);
+                color: white;
+            }
 
-        article .midsec {
-            display: flex;
-            align-items: center;
-            /* justify-content: space-around; */
-            padding: 25px;
-            justify-content: center;
-            margin-top: 20px;
-        }
+            article .midsec {
+                display: flex;
+                align-items: center;
+                /* justify-content: space-around; */
+                padding: 25px;
+                justify-content: center;
+                margin-top: 20px;
+            }
 
-        article .midsec .join h3{
-            text-align: center;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 31px;
-            margin-left: 50px
-        }
+            article .midsec .join h3 {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 31px;
+                margin-left: 50px
+            }
 
-        article .midsec .join p{
-            text-align: center;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            margin-left: 50px
-        }
+            article .midsec .join p {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-left: 50px
+            }
 
-        article .midsec .sub{
-            right:10px;
-            width: 300px;
-            line-height: 2;
-            margin: 25px;
-            padding: 30px;
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 7px;
-            color: black;
-            text-align: center;
-        }
+            article .midsec .sub {
+                right: 10px;
+                width: 300px;
+                line-height: 2;
+                margin: 25px;
+                padding: 30px;
+                background-color: white;
+                border: 1px solid white;
+                border-radius: 7px;
+                color: black;
+                text-align: center;
+            }
 
-        article .midsec .sub h3{
-            color: rgb(0, 195, 255);
-            font-size:x-large;
-            font-weight: 500;
-        }
+            article .midsec .sub h3 {
+                color: rgb(0, 195, 255);
+                font-size: x-large;
+                font-weight: 500;
+            }
 
-        article .midsec .sub input{
-            border: 1px solid rgb(206, 199, 199);
-            padding: 7px 25px;
-            margin-bottom: 5px;
-        }
+            article .midsec .sub input {
+                border: 1px solid rgb(206, 199, 199);
+                padding: 7px 25px;
+                margin-bottom: 5px;
+            }
 
-        article .midsec .sub button{
-            border: 1px solid aqua;
-            border-radius: 10px;
-            font-size: large;
-            background-color: aqua;
-            color: white;
-            width: 150px;
-            padding: 10px 20px;
-            cursor: pointer;
-            /* margin-top: 3px; */
-            margin: 5px auto;
-            display: block;
-        }
+            article .midsec .sub button {
+                border: 1px solid aqua;
+                border-radius: 10px;
+                font-size: large;
+                background-color: aqua;
+                color: white;
+                width: 150px;
+                padding: 10px 20px;
+                cursor: pointer;
+                /* margin-top: 3px; */
+                margin: 5px auto;
+                display: block;
+            }
 
-        article .midsec .sub button:hover{
-            background-color: rgb(0, 162, 255);
-            border: 1px solid rgb(0, 162, 255);
-            border-radius: 10px;
-        }
+            article .midsec .sub button:hover {
+                background-color: rgb(0, 162, 255);
+                border: 1px solid rgb(0, 162, 255);
+                border-radius: 10px;
+            }
 
-        article .package{
-            padding: 25px;
-            margin: 20px;
-            margin-left: 100px;
-        }
+            article .package {
+                padding: 25px;
+                margin: 20px;
+                margin-left: 100px;
+            }
 
-        article .package h3{
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 31px;
-        }
+            article .package h3 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 31px;
+            }
 
-        article .package p{
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
+            article .package p {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
 
-        }
+            }
 
-        footer .f_info .l_logo img {
-            width: 235px;
-        }
+            footer {
+                background-color: white;
+                padding: 50px 100px;
+            }
 
-        footer .f_info {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px 15px;
-        }
+            .f_info {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 30px;
+                font-size: 15px;
+                margin-left: 15px;
+            }
 
-        footer .f_info .connect ul {
-            list-style: none;
-            display: flex;
-        }
+            .f_info .col {
+                flex: 1;
+                margin-right: 20px;
+            }
 
-        footer .f_info .connect ul li {
-            width: 40px;
-            margin: 5px;
-        }
+            .f_info .col h4 {
+                font-size: 16px;
+                font-weight: 700px;
+                line-height: 21px;
+                margin-bottom: 20px;
+                color: black;
+
+            }
+
+            .f_info .col ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: rgb(71, 71, 71);
+                line-height: 14px;
+                font-size: 14px;
+            }
+
+            .f_info .col ul li {
+                margin-bottom: 10px;
+            }
+
+            .f_info .col input[type="email"] {
+                width: 90.5%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            .f_info .col button {
+                padding: 10px 20px;
+                background-color: rgb(0, 162, 255);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-size: 14px;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .f_info .col button:hover {
+                background-color: rgb(0, 130, 200);
+            }
+
+            .footer-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+            }
+
+            .footer-bottom .logo img {
+                height: 50px;
+            }
+
+            footer .para p {
+                color: rgb(112, 107, 107);
+                font-size: 12px;
+                line-height: 24px;
+                font-weight: 500;
+                margin-top: 0;
+            }
+
+            .footer-bottom .social-icons ul {
+                list-style: none;
+                display: flex;
+            }
+
+            .footer-bottom .social-icons ul li {
+                width: 40px;
+                margin: 5px;
+            }
+
+            footer .social-icons ul li svg{
+                width:50px;
+            } 
+
         </style>
     </head>
 </head>
@@ -399,167 +482,129 @@
         </div>
     </main>
 
-    
+
     <article>
-    <div class="midsec">
-        <div class="join">
-            <h3>Join the UltraEdit newsletter</h3> 
-            <p>Sign up for our newsletter and receive emails for the latest <br> news, blogs, and special deals on UltraEdit.</p>
+        <div class="midsec">
+            <div class="join">
+                <h3>Join the UltraEdit newsletter</h3>
+                <p>Sign up for our newsletter and receive emails for the latest <br> news, blogs, and special deals on
+                    UltraEdit.</p>
+            </div>
+            <div class="sub">
+                <h3>Subscribe to our emails</h3>
+                <label for="Email">Enter email address</label><br>
+                <input type="text" id="email" name="email">
+                <br>
+                <button>Sign Up</button>
+            </div>
         </div>
-        <div class="sub">
-            <h3>Subscribe to our emails</h3>
-            <label for="Email">Enter email address</label><br>
-            <input type="text" id="email" name="email">
-            <br>
-            <button>Sign Up</button>
-        </div>
-    </div>
         <div class="package">
             <h3>EXE or MSI?</h3>
             <p>
-                The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and later.
+                The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and
+                later.
             </p>
             <p>
-                We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get the UltraEdit MSI installer.
+                We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get the
+                UltraEdit MSI installer.
             </p>
             <h3>Free trial period</h3>
             <p>
-                This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must purchase a license to continue using it.
+                This application comes with a free, fully functional 30 day trial period. After the trial period
+                expires, you must purchase a license to continue using it.
             </p>
         </div>
 
     </article>
 
     <footer>
-        <table>
-            <tr>
-                <th>What's your language</th>
-                <th>What type of user are you?</th>
-                <th>General</th>
-                <th>Subscribe to Newsletter</th>
-            </tr>
-            <tr>
-                <td>Code editor (General) </td>
-                <td>Programmer / Developer</td>
-                <td>Contact</td>
-                <td>Get the latest news on new</td>
-            </tr>
-            <tr>
-                <td>Text editor</td>
-                <td>Web Developer</td>
-                <td>License Agreement(EULA)</td>
-                <td>releases, event and developments.</td>
-            </tr>
-            <tr>
-                <td>Hex/Binary</td>
-                <td>Database Manager</td>
-                <td>End of Life Policy</td>
-                <td rowspan="12">SUBCRIBE</td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>System Administrator</td>
-                <td>Libraries and Patents</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Technical Writer</td>
-                <td>Information Policy</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Unix shell script</td>
-                <td>Editor / Publisher</td>
-                <td>Privacy Policy</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>PL/SQL</td>
-                <td>Medical / Pharmaceutical</td>
-                <td>Uninstall instructions</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>EDI</td>
-                <td></td>
-                <td>Sitemap</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>C++</td>
-                <td></td>
-                <td>Legal</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>PHP</td>
-                <td></td>
-                <td>Software Security</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>XML</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Markdown</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>SAS</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Visual Basic (VB)</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
         <div class="f_info">
-            <div class="l_logo">
-                <img decoding="async" src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt=""
-                    title="" class="wp-image-25557">
+            <div class="col">
+                <h4>What's your language?</h4>
+                <ul>
+                    <li>Code editor (General)</li>
+                    <li>Text editor</li>
+                    <li>Hex/Binary</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Unix shell scripts</li>
+                    <li>PL/SQL</li>
+                    <li>EDI</li>
+                    <li>C++</li>
+                    <li>PHP</li>
+                    <li>XML</li>
+                    <li>Markdown</li>
+                    <li>SAS</li>
+                    <li>Visual Basic (VB)</li>
+                </ul>
             </div>
-            <div class="connect">
+
+            <div class="col">
+                <h4>What type of user are you?</h4>
+                <ul>
+                    <li>Programmer / Developer</li>
+                    <li>Web Developer</li>
+                    <li>Database Manager</li>
+                    <li>System Administrator</li>
+                    <li>Technical Writer</li>
+                    <li>Editor / Publisher</li>
+                    <li>Medical / Pharmaceutical</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>General</h4>
+                <ul>
+                    <li>Contact</li>
+                    <li>License Agreement (EULA)</li>
+                    <li>End of Life Policy</li>
+                    <li>Libraries and Patents</li>
+                    <li>Information Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Uninstall Instructions</li>
+                    <li>Sitemap</li>
+                    <li>Legal</li>
+                    <li>Software Security</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>Subscribe to Newsletter</h4>
+                <p>Get the latest news on new releases, events, and developments.</p>
+                <input type="email" placeholder="Enter email address...">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="logo">
+                <img decoding="async" src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+                    alt="UltraEdit Logo" title="" class="wp-image-25557">
+            </div>
+            
+            <div class="social-icons">
                 <ul>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                            <path
-                                d="M44,24H4c0,0.338,0,1.662,0,2c0,11.028,8.972,20,20,20s20-8.972,20-20C44,25.662,44,24.338,44,24z">
-                            </path>
-                            <circle cx="24" cy="24" r="19" fill="#fff"></circle>
-                            <path
-                                d="M24,44C12.972,44,4,35.028,4,24S12.972,4,24,4s20,8.972,20,20S35.028,44,24,44z M24,6C14.075,6,6,14.075,6,24	s8.075,18,18,18s18-8.075,18-18S33.925,6,24,6z">
-                            </path>
-                            <path
-                                d="M26.573,29.038h4.921l0.765-4.993h-5.686V21.31c0-2.078,0.675-3.913,2.618-3.913h3.122v-4.363	c-0.549-0.072-1.709-0.234-3.895-0.234c-4.579,0-7.26,2.411-7.26,7.917v3.329h-4.696v4.993h4.696v13.728	C22.093,42.901,23.028,43,24,43c0.873,0,1.727-0.081,2.573-0.198V29.038z">
-                            </path>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                            <path d="M 16 4 C 9.3844276 4 4 9.3844276 4 16 C 4 22.615572 9.3844276 28 16 28 C 22.615572 28 28 22.615572 28 16 C 28 9.3844276 22.615572 4 16 4 z M 16 6 C 21.534692 6 26 10.465308 26 16 C 26 21.027386 22.311682 25.161277 17.488281 25.878906 L 17.488281 18.916016 L 20.335938 18.916016 L 20.783203 16.023438 L 17.488281 16.023438 L 17.488281 14.443359 C 17.488281 13.242359 17.882859 12.175781 19.005859 12.175781 L 20.810547 12.175781 L 20.810547 9.6523438 C 20.493547 9.6093438 19.822688 9.515625 18.554688 9.515625 C 15.906688 9.515625 14.355469 10.913609 14.355469 14.099609 L 14.355469 16.023438 L 11.632812 16.023438 L 11.632812 18.916016 L 14.355469 18.916016 L 14.355469 25.853516 C 9.6088556 25.070647 6 20.973047 6 16 C 6 10.465308 10.465308 6 16 6 z"></path>
+                            </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
                             <path
                                 d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z">
                             </path>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
                             <path
                                 d="M 18.058594 2.9921875 A 0.750075 0.750075 0 0 0 17.490234 3.2675781 L 12.767578 8.9082031 L 9.0566406 3.7714844 C 8.7066406 3.2874844 8.1458281 3 7.5488281 3 L 4.078125 3 C 3.420125 3 3.0388281 3.7462969 3.4238281 4.2792969 L 9.546875 12.755859 L 3.6757812 19.767578 A 0.750075 0.750075 0 1 0 4.8242188 20.732422 L 10.451172 14.009766 L 14.943359 20.228516 C 15.293359 20.712516 15.854172 21 16.451172 21 L 19.921875 21 C 20.579875 21 20.961172 20.253703 20.576172 19.720703 L 13.673828 10.164062 L 18.640625 4.2324219 A 0.750075 0.750075 0 0 0 18.058594 2.9921875 z M 5.4335938 4.5 L 7.5507812 4.5 C 7.6657813 4.5 7.7747969 4.5554375 7.8417969 4.6484375 L 18.566406 19.5 L 16.451172 19.5 C 16.336172 19.5 16.227156 19.444562 16.160156 19.351562 L 11.34375 12.683594 A 0.750075 0.750075 0 0 0 10.822266 11.960938 L 5.4335938 4.5 z">
                             </path>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                             <path
                                 d="M45,23c0-3.325-0.091-6.167-0.271-8.447c-0.251-3.186-2.753-5.674-5.95-5.917C34.975,8.346,29.323,8,24,8	S13.025,8.346,9.221,8.636c-3.197,0.243-5.7,2.731-5.951,5.917C3.091,16.833,3,19.675,3,23c0,0.314,0,1.625,0,2	c0,4.009,0.131,7.55,0.39,10.527c0.275,3.154,2.772,5.623,5.938,5.87C12.854,41.672,18.26,42,24,42s11.146-0.328,14.671-0.604	c3.167-0.247,5.664-2.715,5.939-5.87C44.869,32.55,45,29.009,45,25C45,24.625,45,23.315,45,23z">
                             </path>
@@ -575,7 +620,7 @@
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                             <path
                                 d="M44,24H4c0,0.338,0,1.662,0,2c0,11.028,8.972,20,20,20s20-8.972,20-20C44,25.662,44,24.338,44,24z">
                             </path>
@@ -612,6 +657,10 @@
                     </li>
                 </ul>
             </div>
+            
+        </div>
+        <div class="para">
+            <p>©2024 UltraEdit. All rights reserved</p>
         </div>
     </footer>
 </body>
